@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Boletin3&apos; to &apos;Boletin3OrientacionAObjeto&apos;&#x0D;&#x0A;- Original project: &apos;Unidad2&apos;&#x0D;&#x0A;- Original element: &apos;Unidad2/src/Boletin3&apos;&#x0D;&#x0A;- Renamed element: &apos;Unidad2/src/Boletin3OrientacionAObjeto&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Boletin3&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Boletin3" name="Boletin3OrientacionAObjeto" qualified="false" references="true" stamp="1738658496359" textual="false" version="1.0"/>
+</session>
