@@ -16,9 +16,9 @@ public class Partida {
 		this.ganador = ganador;
 	}
 	
-	private String nombre_Juego;
-	private Participante[] participantes;
-	private Participante ganador;
+	String nombre_Juego;
+	Participante[] participantes;
+	Participante ganador;
 	
 	
 	@Override
@@ -31,30 +31,6 @@ public class Partida {
 	{
 		
 		//Añadido para ver cambios en github
-	}
-
-	public String getNombre_Juego() {
-		return nombre_Juego;
-	}
-
-	public void setNombre_Juego(String nombre_Juego) {
-		this.nombre_Juego = nombre_Juego;
-	}
-
-	public Participante[] getParticipantes() {
-		return participantes;
-	}
-
-	public void setParticipantes(Participante[] participantes) {
-		this.participantes = participantes;
-	}
-
-	public Participante getGanador() {
-		return ganador;
-	}
-
-	public void setGanador(Participante ganador) {
-		this.ganador = ganador;
 	}
 	
 	
