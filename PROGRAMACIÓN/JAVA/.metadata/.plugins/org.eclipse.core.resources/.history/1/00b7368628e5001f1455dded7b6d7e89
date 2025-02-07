@@ -1,0 +1,11 @@
+package Boletin3OrientacionAObjeto;
+
+public class CuentaBancaria {
+
+	private double saldo;
+	private String numCuenta;
+	private Persona titular;
+
+	
+	
+}
