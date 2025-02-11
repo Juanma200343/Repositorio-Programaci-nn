@@ -11,9 +11,9 @@ public class Vehiculo {
 	}
 	
 	
-	protected String dueno;
-	protected int numPuertas ; 
-	protected int numRuedas;
+	private String dueno;
+	private int numPuertas ; 
+	private int numRuedas;
 	
 	
 	public String getDueno() {

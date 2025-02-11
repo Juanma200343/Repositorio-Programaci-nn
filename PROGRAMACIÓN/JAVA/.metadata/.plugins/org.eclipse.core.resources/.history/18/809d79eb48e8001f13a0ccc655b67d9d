@@ -1,21 +1,16 @@
-package BoletinHerencia;
+package BoletinHerencias;
 
-public class Vehiculo {
-	
-	
-	public Vehiculo(String dueno, int numPuertas, int numRuedas) {
-		super();
+public class Automovil extends Vehiculos {
+	public Automovil(String dueno, int numPuertas, int numRuedas) {
+		super(dueno, numRuedas, numRuedas);
 		this.dueno = dueno;
 		this.numPuertas = numPuertas;
 		this.numRuedas = numRuedas;
 	}
-	
-	
-	protected String dueno;
-	protected int numPuertas ; 
-	protected int numRuedas;
-	
-	
+	String dueno;
+	int numPuertas ; 
+	int numRuedas;
+
 	public String getDueno() {
 		return dueno;
 	}
@@ -37,9 +32,9 @@ public class Vehiculo {
 	
 	@Override
 	public String toString() {
-		return "Vehiculos [dueno=" + dueno + ", numPuertas=" + numPuertas + ", numRuedas=" + numRuedas + ", getDueno()="
+		return "Automovil [dueno=" + dueno + ", numPuertas=" + numPuertas + ", numRuedas=" + numRuedas + ", getDueno()="
 				+ getDueno() + ", getNumPuertas()=" + getNumPuertas() + ", getNumRuedas()=" + getNumRuedas() + "]";
 	}
 	
+	
 }
-

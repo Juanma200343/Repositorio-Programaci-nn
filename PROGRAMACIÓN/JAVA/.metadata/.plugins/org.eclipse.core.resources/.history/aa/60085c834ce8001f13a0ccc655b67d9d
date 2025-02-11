@@ -1,19 +1,15 @@
 package BoletinHerencia;
 
 public class Vehiculo {
-	
-	
 	public Vehiculo(String dueno, int numPuertas, int numRuedas) {
 		super();
 		this.dueno = dueno;
 		this.numPuertas = numPuertas;
 		this.numRuedas = numRuedas;
 	}
-	
-	
-	protected String dueno;
-	protected int numPuertas ; 
-	protected int numRuedas;
+	String dueno;
+	int numPuertas ; 
+	int numRuedas;
 	
 	
 	public String getDueno() {

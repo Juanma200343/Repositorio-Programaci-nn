@@ -6,17 +6,15 @@ public class Automovil extends Vehiculo {
 	 * @param dueno
 	 * @param numPuertas
 	 * @param numRuedas
+	 * @param clasificacionEcologica
 	 */
-	public Automovil(String dueno, int numPuertas, int numRuedas) {
-		super();
-		this.dueno = dueno;
-		this.numPuertas = numPuertas;
-		this.numRuedas = numRuedas;
+	public Automovil(String dueno, int numPuertas, int numRuedas, String clasificacionEcologica) {
+		super(dueno, numPuertas, numRuedas);
+		this.clasificacionEcologica = clasificacionEcologica;
 	}
-	
-	String dueno;
-	int numPuertas;
-	int numRuedas;
+
+
+	private String clasificacionEcologica ;
 	
 	
 	@Override
@@ -25,38 +23,18 @@ public class Automovil extends Vehiculo {
 	}
 
 
-	public String getDueno() {
-		return dueno;
+	public String getClasificacionEcologica() {
+		return clasificacionEcologica;
 	}
 
 
-	public void setDueno(String dueno) {
-		this.dueno = dueno;
+	public void setClasificacionEcologica(String clasificacionEcologica) {
+		this.clasificacionEcologica = clasificacionEcologica;
 	}
 
-
-	public int getNumPuertas() {
-		return numPuertas;
-	}
-
-
-	public void setNumPuertas(int numPuertas) {
-		this.numPuertas = numPuertas;
-	}
-
-
-	public int getNumRuedas() {
-		return numRuedas;
-	}
-
-
-	public void setNumRuedas(int numRuedas) {
-		this.numRuedas = numRuedas;
-	}
 	
-	
-	
-	
+
+
 	
 	
 }
