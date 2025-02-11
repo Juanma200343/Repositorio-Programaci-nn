@@ -1,0 +1,28 @@
+package EjercicioMultiplesHerencias;
+
+public class Profesor extends Persona {
+
+	/**
+	 * @param nombre
+	 * @param dni
+	 * @param nombreDepartamento
+	 */
+	public Profesor(String nombre, int dni, String nombreDepartamento) {
+		super(nombre, dni);
+		this.nombreDepartamento = nombreDepartamento;
+	}
+
+	private String nombreDepartamento;
+
+	protected String getNombreDepartamento() {
+		return nombreDepartamento;
+	}
+
+	protected void setNombreDepartamento(String nombreDepartamento) {
+		this.nombreDepartamento = nombreDepartamento;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+package EjercicioMultiplesHerencias;
+
+import java.time.LocalDate;
+
+public class GestionaProfesores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	ProfesorInterino interino1 = new ProfesorInterino("Pepe","Ingles",LocalDate.now().plusMonths(6));
+	
+	}
+
+}

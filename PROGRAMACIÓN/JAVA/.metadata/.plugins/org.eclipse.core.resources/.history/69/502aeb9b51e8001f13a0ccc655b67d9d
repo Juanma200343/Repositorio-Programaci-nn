@@ -1,0 +1,5 @@
+package EjercicioMultiplesHerencias;
+
+public class ProfesorTitular extends Profesor {
+
+}

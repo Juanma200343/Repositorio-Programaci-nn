@@ -10,6 +10,10 @@ public class GestionaVehiculo {
 		
 		boolean esVehiculo = c2 instanceof Vehiculo;
 		System.out.println("Es vehiculo?" + esVehiculo);
+		
+	
+
+		
 	}
 
 }

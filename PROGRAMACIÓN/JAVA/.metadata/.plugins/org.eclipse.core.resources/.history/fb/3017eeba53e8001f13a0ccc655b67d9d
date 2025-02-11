@@ -1,0 +1,29 @@
+package EjercicioMultiplesHerencias;
+
+import java.time.LocalDate;
+
+public class ProfesorInterino extends Profesor {
+
+	public ProfesorInterino(String nombre, int dni, String nombreDepartamento) {
+		super(nombre, dni, nombreDepartamento);
+		// TODO Auto-generated constructor stub
+	}
+
+
+	private LocalDate fechaFinContrato;
+
+	protected LocalDate getFechaFinContrato() {
+		return fechaFinContrato;
+	}
+
+	protected void setFechaFinContrato(LocalDate fechaFinContrato) {
+		this.fechaFinContrato = fechaFinContrato;
+	}
+
+	@Override
+	public String toString() {
+		return "ProfesorInterino [fechaFinContrato=" + fechaFinContrato + ", getNombreDepartamento()="
+				+ getNombreDepartamento() + ", getNombre()=" + getNombre() + ", getDni()=" + getDni() + "]";
+	}
+	
+}

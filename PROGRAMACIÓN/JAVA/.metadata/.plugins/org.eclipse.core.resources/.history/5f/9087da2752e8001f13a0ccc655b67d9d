@@ -1,0 +1,10 @@
+package EjercicioMultiplesHerencias;
+
+public class Profesor extends Persona {
+
+	protected String nombreDepartamento;
+	
+	
+	
+	
+}
