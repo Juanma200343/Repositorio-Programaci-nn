@@ -63,6 +63,7 @@ public class Persona {
 	
 
 	protected float getSalario() {
+		System.out.println("getSalario de persona");
 		return salario;
 	}
 
@@ -102,10 +103,20 @@ public class Persona {
 	
 	
 	protected void concentrarse() {
-		
+		System.out.println("El padre se concentra");
+	}
+	
+	protected void concentrarse2(String lugar) {
+		System.out.println("Metodo para concentrarse del padre con String" + lugar);
+	}
+	
+	protected void concentrarse3(int dias) {
+		System.out.println("Metodo para concentrarse del padre con: " + dias);
 	}
 
 	protected void viajar() {
+		System.out.println("Viajar padre");
+		
 		
 	}
 
