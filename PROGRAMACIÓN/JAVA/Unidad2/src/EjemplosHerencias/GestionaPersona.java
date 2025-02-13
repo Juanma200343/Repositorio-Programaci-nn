@@ -24,8 +24,8 @@ public class GestionaPersona {
 		//h.dirigirPartido();
 	
 	/*p.concentrarse();
-	p.concentrarse2("Sevilla");
-	p.concentrarse3(15);*/
+	p.concentrarse("Sevilla");
+	p.concentrarse(15);*/
 	
 	}
 
