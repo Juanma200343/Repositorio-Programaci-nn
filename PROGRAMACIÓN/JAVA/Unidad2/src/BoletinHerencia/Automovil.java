@@ -8,13 +8,23 @@ public class Automovil extends Vehiculo {
 	 * @param numRuedas
 	 * @param clasificacionEcologica
 	 */
-	public Automovil(String dueno, int numPuertas, int numRuedas, String clasificacionEcologica) {
+	public Automovil(String dueno, int numPuertas, int numRuedas, ClasificacionEcologica clasificacionEcologica) {
 		super(dueno, numPuertas, numRuedas);
 		this.clasificacionEcologica = clasificacionEcologica;
+		setClasificacionEcologica(clasificacionEcologica);
 	}
 
 
-	private String clasificacionEcologica ;
+	private ClasificacionEcologica clasificacionEcologica ;
+	
+	
+	public enum ClasificacionEcologica{
+		ECO,B,C,O;
+	
+	}
+	
+	
+	
 	
 	
 	@Override
@@ -23,12 +33,18 @@ public class Automovil extends Vehiculo {
 	}
 
 
-	public String getClasificacionEcologica() {
+	public ClasificacionEcologica getClasificacionEcologica() {
 		return clasificacionEcologica;
 	}
 
 
-	public void setClasificacionEcologica(String clasificacionEcologica) {
+	
+
+
+	public void setClasificacionEcologica(ClasificacionEcologica clasificacionEcologica ) {
+		this.clasificacionEcologica = clasificacionEcologica;
+
+
 		this.clasificacionEcologica = clasificacionEcologica;
 	}
 
