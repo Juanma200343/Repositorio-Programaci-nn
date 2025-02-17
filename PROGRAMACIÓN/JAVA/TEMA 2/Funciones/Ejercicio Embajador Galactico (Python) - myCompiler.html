@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://www.mycompiler.io/view/9VbiBmNFeQm -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; min-height: 100%; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #444;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ1 .cm-iso {unicode-bidi: isolate;}
+.ͼ1 .cm-announced {position: fixed; top: -10000px;}
+@media print {.ͼ1 .cm-announced {display: none;}}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; inset-inline-start: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace:before {content: attr(data-display); position: absolute; pointer-events: none; color: #888;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ17 {color: #4A4A4A;}
+.ͼ18 {color: #5F6368;}
+.ͼ19 {color: #007A27;}
+.ͼ1a {color: #2F4960;}
+.ͼ1b {color: #506889;}
+.ͼ1c {color: #422E8A;}
+.ͼ1d {color: #BC0056;}
+.ͼ1e {color: #983AB3;}
+.ͼ1f {color: #FF9B00;}
+.ͼ1g {color: #00786D;}
+.ͼ1h {color: #0E161F;}
+.ͼ1i {color: #00786D;}
+.ͼ1j {color: #0E161F;}
+.ͼ1k {color: #4A4A4A;}
+.ͼ1l {color: #007A27;}
+.ͼ1m {color: #A54A78;}
+.ͼ16 .cm-gutters {background-color: #FFF; color: #6B6B70; border-right-color: transparent;}
+.ͼ16 {color: #4A4A4A;}
+.ͼ16.cm-editor .cm-scroller, .ͼ16 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;}
+.ͼ16 .cm-content {caret-color: #4A4A4A;}
+.ͼ16 .cm-cursor, .ͼ16 .cm-dropCursor {border-left-color: #4A4A4A;}
+.ͼ16 .cm-tooltip-autocomplete.cm-tooltip {background-color: #F7F9FA;}
+.ͼ5 {color: #404740;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+</style>
+<script>
+  if (window.location.href.split('#')[0] !== "https:\/\/www.mycompiler.io\/view\/9VbiBmNFeQm") {
+    window.location.href = "https:\/\/www.mycompiler.io\/view\/9VbiBmNFeQm";
+  }
+</script>
+<noscript>
+<meta http-equiv="refresh" content="0; url=/unsupported-browser">
+</noscript>
+<script>
+if (!(function(){try{eval("async()=>{};[{...{a:1}}];");return true;}catch(e){return false;}})()) {
+  window.location.href = '/unsupported-browser';
+}
+</script>
+<script>
+Object.defineProperty(window,'_trans',{value:Object.freeze(JSON.parse("{\"empty_title\":\"Introduzca un t\\u00edtulo para guardar este programa.\",\"unsaved_changes\":\"Tienes cambios sin guardar. \\u00bfAbandonar esta p\\u00e1gina?\",\"empty_code_run\":\"No hay c\\u00f3digo para ejecutar.\",\"empty_code_save\":\"No hay ning\\u00fan c\\u00f3digo para guardar.\",\"run_failed\":\"No se pudo ejecutar el programa:\",\"save_failed\":\"No se pudo guardar el programa:\",\"report_run_error\":\"(Si esto ocurre con frecuencia, por favor [rep\\u00f3rtelo](1))\",\"form_submission_failed\":\"No se puede enviar el formulario. Vuelve a intentarlo.\",\"new_title\":\"Crea un nuevo programa %lang% - myCompiler\"}"))});
+</script>
+<title>Ejercicio Embajador Galactico (Python) - myCompiler</title>
+<meta name="exec-endpoint" content="/exec/run/python">
+<link rel="alternate" type="application/json+oembed" href="https://www.mycompiler.io/embed/oembed?url=https%3A%2F%2Fwww.mycompiler.io%2Fview%2F9VbiBmNFeQm">
+<link id="css" rel="stylesheet" href="./Ejercicio Embajador Galactico (Python) - myCompiler_files/light.css">
+<link rel="icon" type="image/png" href="https://www.mycompiler.io/static/img/mycompiler-logo-256.png?v=1733545849" sizes="256x256">
+<link rel="icon" type="image/png" href="./Ejercicio Embajador Galactico (Python) - myCompiler_files/mycompiler-logo-32.png" sizes="32x32">
+<meta property="og:image" content="https://www.mycompiler.io/static/img/mycompiler-logo-256.png?v=1733545849">
+<meta name="twitter:image" content="https://www.mycompiler.io/static/img/mycompiler-logo-256.png?v=1733545849">
+<meta itemprop="image" content="https://www.mycompiler.io/static/img/mycompiler-logo-256.png?v=1733545849">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="recaptcha-site-key" content="6LeGlZwUAAAAAIsE0FGWW8iP4F2luQ108wbm3ueV">
+<meta name="color-scheme" content="only light">
+<meta name="sentry-dsn" content="https://53433220853a7ad07077b4a14b575020@errors.mycompiler.io/2">
+<meta name="app-version" content="master/64715483">
+<script async="" src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MW1MSCEKGR');
+</script>
+<meta name="flash-show" content="">
+<style></style></head>
+<body class="">
+<div id="site-content">
+<nav class="navbar is-dark" aria-label="main navigation" x-data="{&quot;open&quot;:false,&quot;themeLoading&quot;:false,&quot;theme&quot;:&quot;light&quot;,&quot;showLocales&quot;:false}">
+<div class="navbar-brand">
+<a class="navbar-item" href="https://www.mycompiler.io/">
+<figure class="image is-32x32 logo">
+<img alt="" src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/mycompiler-logo-32.png">
+</figure>
+      myCompiler
+</a>
+<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" @click="open = !open">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</a>
+</div>
+<div id="top-nav" :class="&#39;navbar-menu &#39; + (open ? &#39;is-active&#39; : &#39;&#39;)" class="navbar-menu">
+<div class="navbar-start">
+<span class="navbar-item">
+</span>
+</div>
+<div class="navbar-end">
+<div class="navbar-item" @click="showLocales = !showLocales" @click.outside="showLocales = false" @keydown.escape.window="showLocales = false">
+<a class="navbar-link">
+<span class="icon">
+<i class="fas fa-globe" aria-hidden="true"></i>
+</span>
+<span>
+Español
+</span>
+</a>
+<div class="navbar-dropdown" :style="showLocales ? &#39;display: initial&#39; : &#39;display: none&#39;" style="display: none">
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;de&#39; })">
+<span class="icon">
+</span>
+<span>
+Deutsch
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;en&#39; })">
+<span class="icon">
+</span>
+<span>
+English
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;es&#39; })">
+<span class="icon">
+<i class="fas fa-check" aria-hidden="true"></i>
+</span>
+<span>
+Español
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;fr&#39; })">
+<span class="icon">
+</span>
+<span>
+Français
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;it&#39; })">
+<span class="icon">
+</span>
+<span>
+Italiano
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;ja&#39; })">
+<span class="icon">
+</span>
+<span>
+日本語
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;ko&#39; })">
+<span class="icon">
+</span>
+<span>
+한국어
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;nl&#39; })">
+<span class="icon">
+</span>
+<span>
+Nederlands
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;pl&#39; })">
+<span class="icon">
+</span>
+<span>
+Polski
+</span>
+</a>
+<a class="navbar-item" @click="$dispatch(&#39;langchange&#39;, { locale: &#39;pt&#39; })">
+<span class="icon">
+</span>
+<span>
+Português
+</span>
+</a>
+</div>
+</div>
+<a class="navbar-item has-tooltip-bottom" id="theme-toggle" data-tooltip="Change theme" :disabled="themeLoading" @click="themeLoading = true; newTheme = (theme == &#39;dark&#39;) ? &#39;light&#39; : &#39;dark&#39;;
+        $dispatch(&#39;themechange&#39;, { newTheme });" @themechangefinished.window="themeLoading = false; theme = $event.detail.theme;">
+<template x-if="themeLoading"></template>
+<template x-if="!themeLoading &amp;&amp; theme == &#39;dark&#39;"></template>
+<template x-if="!themeLoading &amp;&amp; theme == &#39;light&#39;"></template><i class="fas fa-moon"></i>
+</a>
+<a class="navbar-item" href="https://www.mycompiler.io/recent">
+Reciente
+</a>
+<a class="navbar-item" href="https://www.mycompiler.io/login">
+Iniciar sesión
+</a>
+<a class="navbar-item" href="https://www.mycompiler.io/signup">
+Inscríbase
+</a>
+</div>
+</div>
+</nav>
+<div id="global-notifications">
+</div>
+<div class="main section">
+<div class="columns" id="code-title-column-group">
+<div class="column is-9 program-title">
+<h1 class="title is-4">
+Ejercicio Embajador Galactico
+</h1>
+</div>
+<div class="column program-info">
+<span>
+un usuario anónimo
+      ·
+<span class="timestamp published" datetime="2024-12-10 08:51:11 UTC" timeago-id="1">justo ahora</span>
+</span>
+</div>
+</div>
+<div id="code-actions">
+<div>
+<img alt="" class="lang-icon is-hidden-xs" src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/python_small.png">
+Python
+<div class="dropdown is-hidden-mobile is-hoverable">
+<div class="drodpown-trigger">
+<button class="button" aria-haspopup="true">
+<i class="fas fa-info-circle"></i>
+</button>
+</div>
+<div class="dropdown-menu" role="menu">
+<div class="dropdown-content">
+<p class="dropdown-item">
+Python 3.11 (with numpy, scipy, matplotlib, scikit-learn)
+</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<button x-data="{ loading: false, shortcut: &#39;&#39; }" x-init="shortcut = $store.g.shortcut(&#39;Ctrl-Enter&#39;, () =&gt; $dispatch(&#39;runprogram&#39;))" id="run-button" :data-tooltip="shortcut" :class="&#39;button is-primary &#39; + (loading ? &#39;is-loading&#39; : &#39;&#39;)" @click="$dispatch(&#39;runprogram&#39;)" @programstatechanged.window="loading = $event.detail.running" data-tooltip="Ctrl+Enter" class="button is-primary">
+<span class="icon">
+<i class="fas fa-play" aria-hidden="true"></i>
+</span>
+<span class="is-hidden-xs">
+Ejecute
+</span>
+</button>
+<a class="button is-success" href="https://www.mycompiler.io/new/python?fork=9VbiBmNFeQm">
+<span class="icon">
+<i class="fas fa-code-branch" aria-hidden="true"></i>
+</span>
+<span class="is-hidden-mobile">
+Crear copia
+</span>
+</a>
+<div class="dropdown is-right is-hoverable">
+<div class="dropdown-trigger">
+<button class="button is-info" aria-haspopup="true">
+<span class="icon">
+<i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+</span>
+</button>
+</div>
+<div x-data="{&quot;text&quot;:&quot;https:\/\/www.mycompiler.io\/view\/9VbiBmNFeQm&quot;,&quot;copied&quot;:false}" class="dropdown-menu" role="menu">
+<div class="dropdown-content">
+<a class="dropdown-item" @click="$store.g.copyText(text); copied = true; window.setTimeout(() =&gt; { copied = false; }, 2000);">
+<span class="icon">
+<template x-if="copied === false"></template><i class="fas fa-copy" aria-hidden="true"></i>
+<template x-if="copied === true"></template>
+</span>
+<span>
+Copiar enlace
+</span>
+</a>
+<a class="dropdown-item" target="_blank" href="https://www.mycompiler.io/download/9VbiBmNFeQm">
+<span class="icon">
+<i class="fas fa-download" aria-hidden="true"></i>
+</span>
+<span>
+Descargar
+</span>
+</a>
+<a class="dropdown-item" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mycompiler.io%2Fview%2F9VbiBmNFeQm">
+<span class="icon">
+<i class="fab fa-facebook-f" aria-hidden="true"></i>
+</span>
+<span>
+Compartir en Facebook
+</span>
+</a>
+<a class="dropdown-item" target="_blank" href="https://www.twitter.com/intent/tweet?url=https%3A%2F%2Fwww.mycompiler.io%2Fview%2F9VbiBmNFeQm">
+<span class="icon">
+<i class="fab fa-twitter" aria-hidden="true"></i>
+</span>
+<span>
+Compartir en Twitter
+</span>
+</a>
+<a class="dropdown-item" target="_blank" href="http://www.reddit.com/submit?url=https%3A%2F%2Fwww.mycompiler.io%2Fview%2F9VbiBmNFeQm">
+<span class="icon">
+<i class="fab fa-reddit" aria-hidden="true"></i>
+</span>
+<span>
+Compartir en Reddit
+</span>
+</a>
+<a class="dropdown-item" @click="$dispatch(&#39;showembedinfo&#39;)">
+<span class="icon">
+<i class="fas fa-code" aria-hidden="true"></i>
+</span>
+<span>
+Insertar en el sitio web
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="columns" id="code-area" x-data="{&quot;running&quot;:false,&quot;output&quot;:&quot;(Ejecute el programa para ver su salida)&quot;}" @programstatechanged.window="running = $event.detail.running || false; output = $event.detail.output || &#39;&#39;;
+  if (!$event.detail.running) $store.g.scrollTo(document.getElementById(&#39;output-terminal&#39;));">
+<div id="left-pane" class="column is-two-thirds is-flex-direction-column">
+<div id="code-editor" class="is-read-only" data-lang="python">
+
+<div class="cm-editor ͼ1 ͼ2 ͼ16"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 1026.88px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 19.5938px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 19.5938px;">2</div><div class="cm-gutterElement" style="height: 19.5938px;">3</div><div class="cm-gutterElement" style="height: 19.5938px;">4</div><div class="cm-gutterElement" style="height: 19.5938px;">5</div><div class="cm-gutterElement" style="height: 19.5938px;">6</div><div class="cm-gutterElement" style="height: 19.5938px;">7</div><div class="cm-gutterElement" style="height: 19.5938px;">8</div><div class="cm-gutterElement" style="height: 19.5938px;">9</div><div class="cm-gutterElement" style="height: 19.5938px;">10</div><div class="cm-gutterElement" style="height: 19.5938px;">11</div><div class="cm-gutterElement" style="height: 19.5938px;">12</div><div class="cm-gutterElement" style="height: 19.5938px;">13</div><div class="cm-gutterElement" style="height: 19.5938px;">14</div><div class="cm-gutterElement" style="height: 19.5938px;">15</div><div class="cm-gutterElement" style="height: 19.5938px;">16</div><div class="cm-gutterElement" style="height: 19.5938px;">17</div><div class="cm-gutterElement" style="height: 19.5938px;">18</div><div class="cm-gutterElement" style="height: 19.5938px;">19</div><div class="cm-gutterElement" style="height: 19.5938px;">20</div><div class="cm-gutterElement" style="height: 19.5938px;">21</div><div class="cm-gutterElement" style="height: 19.5938px;">22</div><div class="cm-gutterElement" style="height: 19.5938px;">23</div><div class="cm-gutterElement" style="height: 19.5938px;">24</div><div class="cm-gutterElement" style="height: 19.5938px;">25</div><div class="cm-gutterElement" style="height: 19.5938px;">26</div><div class="cm-gutterElement" style="height: 19.5938px;">27</div><div class="cm-gutterElement" style="height: 19.5938px;">28</div><div class="cm-gutterElement" style="height: 19.5938px;">29</div><div class="cm-gutterElement" style="height: 19.5938px;">30</div><div class="cm-gutterElement" style="height: 19.5938px;">31</div><div class="cm-gutterElement" style="height: 19.5938px;">32</div><div class="cm-gutterElement" style="height: 19.5938px;">33</div><div class="cm-gutterElement" style="height: 19.5938px;">34</div><div class="cm-gutterElement" style="height: 19.5938px;">35</div><div class="cm-gutterElement" style="height: 19.5938px;">36</div><div class="cm-gutterElement" style="height: 19.5938px;">37</div><div class="cm-gutterElement" style="height: 19.5938px;">38</div><div class="cm-gutterElement" style="height: 19.5938px;">39</div><div class="cm-gutterElement" style="height: 19.5938px;">40</div><div class="cm-gutterElement" style="height: 19.5938px;">41</div><div class="cm-gutterElement" style="height: 19.5938px;">42</div><div class="cm-gutterElement" style="height: 19.5938px;">43</div><div class="cm-gutterElement" style="height: 19.5938px;">44</div><div class="cm-gutterElement" style="height: 19.5938px;">45</div><div class="cm-gutterElement" style="height: 19.5938px;">46</div><div class="cm-gutterElement" style="height: 19.5938px;">47</div><div class="cm-gutterElement" style="height: 19.5938px;">48</div><div class="cm-gutterElement" style="height: 19.5938px;">49</div><div class="cm-gutterElement" style="height: 19.5938px;">50</div><div class="cm-gutterElement" style="height: 19.5938px;">51</div><div class="cm-gutterElement" style="height: 19.5938px;">52</div></div></div><div style="tab-size: 4;" spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content" role="textbox" aria-multiline="true" aria-readonly="true" data-language="python"><div class="cm-line"><span class="ͼ18"># def imprimeEstadoActualmaq lo que hace es una vez que te sales del menu nos muestra el resultado de la partida.</span></div><div class="cm-line"><span class="ͼ18"># def imprimemenu nos muestra el menu.</span></div><div class="cm-line"><span class="ͼ18"># def visitaplaneta nos muestra aleatoriamente 30 planetas donde 15 son aliados y 5 hostiles, los 10 restantes son neutros.</span></div><div class="cm-line"><span class="ͼ18"># def imprimeEstadoactual nos imprime el Nº de planetas visitados totales, Nº de planetas aliados, Nº de planetas hostiles y por ultimo la puntuacion obtenida.</span></div><div class="cm-line"><span class="ͼ18"># def partidaempezada nos devolvera la posicion de los 30 planetas.</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ19">import</span>.<span class="ͼ1b">ramdom</span><span class="ͼ1k">.</span><span class="ͼ1b">radint</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ19">def</span> <span class="ͼ1b">partidaempezada</span>(<span class="ͼ1b">posicion</span>)</div><div class="cm-line">    <span class="ͼ1b">aliados</span> <span class="ͼ1k">=</span>[] <span class="ͼ1b">ramdom</span><span class="ͼ1k">.</span><span class="ͼ1m">radint</span>(<span class="ͼ1g">15</span>)</div><div class="cm-line">    <span class="ͼ1b">hostiles</span> <span class="ͼ1k">=</span> []<span class="ͼ1b">ramdom</span><span class="ͼ1k">.</span><span class="ͼ1m">radint</span> (<span class="ͼ1g">5</span>)</div><div class="cm-line">    <span class="ͼ19">for</span> <span class="ͼ1b">posicion</span> <span class="ͼ19">in</span> <span class="ͼ1b">range</span>(<span class="ͼ1g">0</span>,<span class="ͼ1g">30</span>)</div><div class="cm-line">        </div><div class="cm-line"><br></div><div class="cm-line">    <span class="ͼ19">return</span> <span class="ͼ1b">posicion</span></div><div class="cm-line">        </div><div class="cm-line"><span class="ͼ19">def</span> <span class="ͼ1b">visitaplaneta</span>(<span class="ͼ1b">planeta</span>)</div><div class="cm-line">    <span class="ͼ19">if</span> <span class="ͼ1b">aliado</span> <span class="ͼ1k">==</span> True;</div><div class="cm-line">        <span class="ͼ1b">print</span>(<span class="ͼ1d">"El planeta visitado: es amigo"</span>)</div><div class="cm-line">    <span class="ͼ19">elif</span> <span class="ͼ1b">aliado</span> <span class="ͼ1k">==</span> <span class="ͼ1b">false</span>;</div><div class="cm-line">        <span class="ͼ1b">print</span>(<span class="ͼ1d">"El planeta visitado: es hostil"</span>)</div><div class="cm-line">    <span class="ͼ19">else</span>:</div><div class="cm-line">        <span class="ͼ1b">print</span>(<span class="ͼ1d">"El planeta visitado: es neutro"</span>)</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ19">def</span> <span class="ͼ1b">imprimeEstadoactual</span>(<span class="ͼ1b">planetas_totales</span>,<span class="ͼ1b">NºdePlanetas_amigos</span>,<span class="ͼ1b">NºdePlanetas_hostiles</span>,<span class="ͼ1b">puntuacion</span>)</div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line">    <span class="ͼ19">return</span> <span class="ͼ1b">imprimeEstadoactual</span></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ19">def</span> <span class="ͼ1b">imprimeMenu</span></div><div class="cm-line">    <span class="ͼ1b">print</span>(<span class="ͼ1d">"1.Inicia Partida"</span>)</div><div class="cm-line">    <span class="ͼ1b">print</span>(<span class="ͼ1d">"2.Visitar Planeta"</span>)</div><div class="cm-line">    <span class="ͼ1b">print</span>(<span class="ͼ1d">"3.Imprime estado actual de la mision"</span>)</div><div class="cm-line">    <span class="ͼ1b">print</span>(<span class="ͼ1d">"4.Salir"</span>)</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ1b">opcion</span> <span class="ͼ1k">!=</span> <span class="ͼ1g">1</span><span class="ͼ1k">.</span><span class="ͼ1m">Inicia</span> <span class="ͼ1b">Partida</span> <span class="ͼ19">or</span> <span class="ͼ1b">opcion</span> <span class="ͼ1k">!=</span> <span class="ͼ1g">2</span><span class="ͼ1k">.</span><span class="ͼ1m">Visitar</span> <span class="ͼ1b">Planeta</span> <span class="ͼ19">or</span> <span class="ͼ1b">opcion</span> <span class="ͼ1k">!=</span> <span class="ͼ1g">3</span><span class="ͼ1k">.</span><span class="ͼ1m">Imprime</span> <span class="ͼ1b">estado</span> <span class="ͼ1b">actual</span> <span class="ͼ1b">de</span> <span class="ͼ1b">la</span> <span class="ͼ1b">mision</span> <span class="ͼ19">or</span> <span class="ͼ1b">opcion</span> <span class="ͼ1k">!=</span> <span class="ͼ1g">4</span><span class="ͼ1k">.</span><span class="ͼ1m">Salir</span>;</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ1b">resultado</span> <span class="ͼ1k">=</span> <span class="ͼ1d">""</span>;</div><div class="cm-line"><span class="ͼ19">match</span> <span class="ͼ1b">resultado</span></div><div class="cm-line"><span class="ͼ1b">case</span> <span class="ͼ1g">1</span>:</div><div class="cm-line">    <span class="ͼ1b">print</span>(<span class="ͼ1d">"1.Inicia Partida"</span>,<span class="ͼ1b">iniciapartida</span>);</div><div class="cm-line"><span class="ͼ1b">case</span> <span class="ͼ1g">2</span>:</div><div class="cm-line">    <span class="ͼ1b">print</span>(<span class="ͼ1d">"2.Visitar Planeta"</span>);</div><div class="cm-line"><span class="ͼ1b">case</span> <span class="ͼ1g">3</span>:</div><div class="cm-line">    <span class="ͼ1b">print</span>(<span class="ͼ1d">"3.Imprime estado actual de la mision"</span>);</div><div class="cm-line"><span class="ͼ1b">case</span> <span class="ͼ1g">4</span>: </div><div class="cm-line">    <span class="ͼ1b">print</span>(<span class="ͼ1d">"Salir"</span>)</div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div></div></div></div></div>
+</div>
+<div id="pane-resizer" class="resizer">
+</div>
+<div id="right-pane" class="column is-one-third">
+<div class="is-fullheight is-flex-direction-column">
+<div class="block ">
+<textarea id="stdin" class="textarea is-small has-fixed-size" placeholder="Entrada del programa" rows="2"></textarea>
+</div>
+<div class="block">
+<b>Salida del programa</b>
+</div>
+<div class="block program-output is-flex-direction-column">
+<pre class="terminal" id="output-terminal" x-html="output">(Ejecute el programa para ver su salida)</pre>
+<div :class="&#39;overlay &#39; + (running ? &#39;&#39; : &#39;is-hidden&#39;)" id="progress-overlay" class="overlay is-hidden">
+<progress class="progress is-small" max="100"></progress>
+</div>
+</div>
+<div class="block">
+<script id="_carbonads_js" async="" type="text/javascript" src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/carbon.js.descarga">
+</script><div id="carbonads"><span>
+
+<span class="carbon-wrap">
+	<a href="https://srv.carbonads.net/ads/click/x/GTND427ICKSI5K7LCEYLYKQUCKBDCK3UCV7D4Z3JCA7IVKQ7CTAI45QKC67IC53NCVYDK23LF67D62Q7CEYDV277HEYI5K7IFTYI52JECTNCYBZ52K" class="carbon-img" target="_blank" rel="noopener sponsored">
+		<img src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/0bd00a7940eb4298ceede9b271d596bfe8a78e2b" alt="ads via Carbon" border="0" height="100" width="130" data-no-statview="no" style="max-width: 130px;">
+	</a>
+	<a href="https://srv.carbonads.net/ads/click/x/GTND427ICKSI5K7LCEYLYKQUCKBDCK3UCV7D4Z3JCA7IVKQ7CTAI45QKC67IC53NCVYDK23LF67D62Q7CEYDV277HEYI5K7IFTYI52JECTNCYBZ52K" class="carbon-text" target="_blank" rel="noopener sponsored">
+		Follow this LoFi playlist for maximum focus.
+	</a>
+</span>
+<a href="http://carbonads.net/?utm_source=wwwmycompilerio&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a>
+</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="columns is-centered">
+<div class="column" x-data="{&quot;comments&quot;:[],&quot;error&quot;:&quot;&quot;,&quot;loading&quot;:false}">
+<div id="comments" @commentadd.window="comments.push($event.detail)">
+<h2 class="subtitle">
+Comentarios
+</h2>
+<template x-for="comment in comments"></template>
+<div class="box comment-cta">
+<div class="content has-text-centered">
+Por favor <a href="https://www.mycompiler.io/signup">reg&amp;iacute;strate</a> o <a href="https://www.mycompiler.io/login">inicia sesi&amp;oacute;n</a> para contribuir al debate.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-data="{&quot;open&quot;:false,&quot;text&quot;:&quot;&lt;script async src=\&quot;https:\/\/www.mycompiler.io\/static\/js\/embedv2.js#id:9VbiBmNFeQm\&quot;&gt;&lt;\/script&gt;&quot;,&quot;copied&quot;:false}" id="embed-modal" :class="&#39;modal &#39; + (open ? &#39;is-active&#39;: &#39;&#39;)" @showembedinfo.window="open = true" class="modal">
+<div class="modal-background"></div>
+<div class="modal-card">
+<div class="modal-card-head">
+<p class="modal-card-title">
+Insertar en el sitio web
+</p>
+<button class="delete" aria-label="close" @click="open = false">
+</button>
+</div>
+<div class="modal-card-body">
+<div class="content">
+Para incrustar este programa en su sitio web, copie el siguiente código y péguelo en el HTML de su sitio web:
+<div class="field has-addons">
+<div class="control is-expanded">
+<input class="input is-family-monospace" type="text" x-bind:value="text" readonly="">
+</div>
+<div class="control">
+<button :class="&#39;button &#39; + (copied ? &#39;is-success&#39; : &#39;is-light&#39;)" @click="$store.g.copyText(text); copied = true; window.setTimeout(() =&gt; { copied = false; }, 2000);" class="button is-light">
+<span class="icon">
+<template x-if="copied === false"></template><i class="fas fa-copy" aria-hidden="true"></i>
+<template x-if="copied === true"></template>
+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-card-foot">
+<button class="button" @click="open = false">
+Cerrar
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="content has-text-centered">
+<h3 class="subtitle is-5">
+Lenguajes de programación compatibles
+</h3>
+<div class="columns is-centered">
+<div class="column is-four-fifths is-hidden-mobile">
+<div class="columns is-multiline">
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-deno-editor">Deno</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-javascript-editor">JavaScript</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-nodejs-editor">NodeJS</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-python-compiler">Python</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-ruby-compiler">Ruby</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-go-compiler">Go</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-c-compiler">C</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-c++-compiler">C++</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-java-compiler">Java</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-csharp-compiler">C#</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-typescript-compiler">TypeScript</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-php-compiler">PHP</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/run-bash-online">Bash</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-r-compiler">R</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-octave-matlab-compiler">Octave (MATLAB)</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-fortran-compiler">Fortran</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-lua-compiler">Lua</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-erlang-compiler">Erlang</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-sql-editor">SQL</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-mysql-editor">MySQL</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-mongodb-editor">MongoDB</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-clojure-compiler">Clojure</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-d-compiler">D</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-perl-compiler">Perl</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-kotlin-compiler">Kotlin</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-swift-compiler">Swift</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-rust-compiler">Rust</a>
+</div>
+<div class="footer-link-column column is-2">
+<a href="https://www.mycompiler.io/es/online-assembly-asm-compiler">Assembly</a>
+</div>
+</div>
+</div>
+<div class="column is-four-fifths is-hidden-tablet">
+<div class="columns is-multiline is-mobile">
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-deno-editor">Deno</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-javascript-editor">JavaScript</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-nodejs-editor">NodeJS</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-python-compiler">Python</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-ruby-compiler">Ruby</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-go-compiler">Go</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-c-compiler">C</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-c++-compiler">C++</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-java-compiler">Java</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-csharp-compiler">C#</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-typescript-compiler">TypeScript</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-php-compiler">PHP</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/run-bash-online">Bash</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-r-compiler">R</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-octave-matlab-compiler">Octave (MATLAB)</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-fortran-compiler">Fortran</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-lua-compiler">Lua</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-erlang-compiler">Erlang</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-sql-editor">SQL</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-mysql-editor">MySQL</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-mongodb-editor">MongoDB</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-clojure-compiler">Clojure</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-d-compiler">D</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-perl-compiler">Perl</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-kotlin-compiler">Kotlin</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-swift-compiler">Swift</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-rust-compiler">Rust</a>
+</div>
+<div class="footer-link-column column is-one-third">
+<a href="https://www.mycompiler.io/es/online-assembly-asm-compiler">Assembly</a>
+</div>
+</div>
+</div>
+</div>
+<br>
+<a href="https://www.mycompiler.io/guides">Guías de programación</a> |
+<a href="https://www.mycompiler.io/legal#tos">Condiciones de servicio</a> |
+<a href="https://www.mycompiler.io/legal#privacy">Política de privacidad</a> |
+<a href="https://www.mycompiler.io/contact-us">Póngase en contacto con nosotros</a> |
+    © 2019 - 2024 mycompiler.io.
+</div>
+</footer>
+<script src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/1vpj3b0esheheqkn.js.descarga"></script><script src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/3wvpkqxyfh4zsuk3.js.descarga"></script><script src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/0tnc8mzug1x4ajsk.js.descarga"></script><script src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/489f52kxq434omaf.js.descarga"></script><script src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/33vkspfdsjbhblg6.js.descarga"></script><script src="./Ejercicio Embajador Galactico (Python) - myCompiler_files/4wgnhqnl3m6qpu4e.js.descarga"></script>
+
+
+</body></html>

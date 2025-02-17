@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="BoletinHerencia.Automovil.ClasificacionEcologica"/>
 </qualifiedTypeNameHistroy>

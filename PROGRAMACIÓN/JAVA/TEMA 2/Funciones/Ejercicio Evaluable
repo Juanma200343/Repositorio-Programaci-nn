@@ -1,0 +1,24 @@
+# Registro de préstamos de libros durante un mes 
+# a) Quiero almacenar durante cada día de la semana, 7 columnas(días de la semana) y 4 semanas(un mes).
+# Esta matriz se construye del 0 al 100 de manera aleatoria
+# b) Quiero mostrar el total de libros prestados durante el mes, la semana y el día
+
+
+import random
+
+def contruyeMatriz():
+    fila= []
+    for numcolum in range (0,4):
+        for numfila in range (0,7):
+            fila.append(random.randint(0,100))
+    return matriz
+
+def 
+
+
+
+
+presmes = 0
+pressemana = 0
+presmax = 0
+matriz = [presmes, pressemana,presmax]
