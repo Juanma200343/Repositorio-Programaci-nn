@@ -1,5 +1,0 @@
-package EjercicioMultiplesHerencias;
-
-public class ProfesorInterino extends Profesor {
-
-}

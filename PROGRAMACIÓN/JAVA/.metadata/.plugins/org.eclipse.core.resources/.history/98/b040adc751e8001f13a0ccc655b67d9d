@@ -1,8 +1,0 @@
-package EjercicioMultiplesHerencias;
-
-public class Persona {
-
-	protected String nombre;
-	protected int dni;
-	
-}

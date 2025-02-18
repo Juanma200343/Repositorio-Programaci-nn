@@ -29,6 +29,7 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="true"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="true"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\jdomgar361\Desktop\simulacionCristina"/>
 			<item value="C:\Users\jdomgar361\Desktop\EjerciciosPara5-2"/>
 		</list>
 		<section name="FileSystemImportWizard.dialogBounds">
