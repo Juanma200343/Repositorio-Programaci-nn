@@ -16,6 +16,7 @@ public class Persona {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.Fecha_Nacimiento = fecha_Nacimiento;
+		this.setDni(dni);
 	}
 	
 	
@@ -33,6 +34,8 @@ public class Persona {
 	
 	
 	public void setDni(String dni) {
+		String numero = "10107896x";
+		System.out.println(numero.matches("\\d{8}[A-Za-z]{1}"));
 		this.dni = dni;
 	}
 	public String getNombre() {
