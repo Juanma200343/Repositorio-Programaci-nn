@@ -10,16 +10,20 @@ public class CuentaBancaria {
 	private String iban;
 	private Cliente cliente_titular;
 	private Cliente cliente_autorizado;
-	private static int id;
+	private static int contador;
+	private int id;
+	
 	public CuentaBancaria(double saldo, LocalDate fecha_apertura, String iban, Cliente cliente_titular,
 			Cliente cliente_autorizado) {
+		
 		super();
 		this.saldo = saldo;
 		this.fecha_apertura = fecha_apertura;
 		this.iban = iban;
 		this.cliente_titular = cliente_titular;
 		this.cliente_autorizado = cliente_autorizado;
-		id = id+1;
+		contador = contador+1;
+		this.id = contador+1;
 	}
 	
 

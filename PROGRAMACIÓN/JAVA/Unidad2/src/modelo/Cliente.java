@@ -5,6 +5,7 @@ public class Cliente {
 	private String nombre;
 	private String apellidos;
 	private String dni;
+	
 	public Cliente(String nombre, String apellidos, String dni) {
 		super();
 		this.nombre = nombre;

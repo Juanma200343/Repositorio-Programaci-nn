@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="JUnitWizards">
 		<section name="NewTestCaseCreationWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="705"/>
+			<item key="DIALOG_X_ORIGIN" value="441"/>
 			<item key="DIALOG_Y_ORIGIN" value="144"/>
 			<item key="DIALOG_WIDTH" value="526"/>
 			<item key="DIALOG_HEIGHT" value="576"/>
