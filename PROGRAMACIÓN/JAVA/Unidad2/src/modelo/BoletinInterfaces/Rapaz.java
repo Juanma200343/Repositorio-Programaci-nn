@@ -9,13 +9,10 @@ public class Rapaz extends Animal {
 
 	@Override
 	boolean ataca() {
+		boolean ataca = true ;
 		
-		if(TipoDeFamilia.SERPIENTE != null ) {
 			
-		}
-	
-			
-		return true;
+		return ataca;
 	}
 
 	@Override
