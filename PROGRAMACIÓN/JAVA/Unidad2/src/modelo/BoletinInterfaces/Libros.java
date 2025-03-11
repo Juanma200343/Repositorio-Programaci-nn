@@ -18,7 +18,7 @@ int diasPrestados;
  */
 
 public Libros(String id, String ubicacion, String autor, String editorial, String genero_literario, int diasPrestados) {
-	super(id, ubicacion);
+	super(id, ubicacion,diasPrestados);
 	this.autor = autor;
 	this.editorial = editorial;
 	this.genero_literario = genero_literario;
