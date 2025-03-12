@@ -17,6 +17,7 @@ public void setDiasPrestados(int diasPrestados) {
 /**
  * @param id
  * @param ubicacion
+
  * @param diasPrestados 
  */
 public Recursos(String id, String ubicacion, int diasPrestados) {

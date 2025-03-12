@@ -3,6 +3,8 @@ package modelo;
 
 import java.time.LocalDate;
 
+import modelo.Refactorizar.Cliente;
+
 public class CuentaBancaria {
 
 	private double saldo;

@@ -1,6 +1,6 @@
 package modelo.BoletinInterfaces;
 
-public class Libros extends Recursos {
+public class Libro extends Recursos {
 
 String autor;
 String editorial;
@@ -17,7 +17,7 @@ int diasPrestados;
  * @param diasPrestados
  */
 
-public Libros(String id, String ubicacion, String autor, String editorial, String genero_literario, int diasPrestados) {
+public Libro(String id, String ubicacion, String autor, String editorial, String genero_literario, int diasPrestados) {
 	super(id, ubicacion,diasPrestados);
 	this.autor = autor;
 	this.editorial = editorial;

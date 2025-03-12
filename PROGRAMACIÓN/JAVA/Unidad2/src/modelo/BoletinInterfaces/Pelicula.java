@@ -1,9 +1,9 @@
 package modelo.BoletinInterfaces;
 
-public class Peliculas extends ElementosMultimedia {
+public class Pelicula extends ElementosMultimedia {
 
-	public Peliculas(String id, String ubicacion, int diasPrestados) {
-		super(id, ubicacion,diasPrestados);
+	public Pelicula(String id, String ubicacion, int diasPrestados,String nombre, String genero,int duracion) {
+		super(id, ubicacion,genero,nombre,diasPrestados,duracion);
 		// TODO Auto-generated constructor stub
 		this.diasPrestados = 10;
 	}
@@ -11,7 +11,7 @@ public class Peliculas extends ElementosMultimedia {
 	@Override
 	public boolean estaDisponible() {
 		// TODO Auto-generated method stub
-		return super.estaDisponible();
+		return false;
 	}
 
 	@Override
@@ -20,13 +20,8 @@ public class Peliculas extends ElementosMultimedia {
 		return this.diasPrestados;
 	}
 
-	int duracionPeliculaMin(){
-		
-		
-		
-		
-		return 0;
-		
-	}
+
+
+	
 	
 }
