@@ -1,0 +1,7 @@
+package modelo.BoletinInterfaces2;
+
+public enum Categoria {
+
+	JEFE_PROYECTO,SCRUM_MASTER,DESARROLLADOR_SENIOR,DESARROLLADOR_JUNIOR,ARQUITECTO;
+	
+}
