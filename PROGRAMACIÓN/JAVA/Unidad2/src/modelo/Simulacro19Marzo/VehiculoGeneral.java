@@ -46,7 +46,15 @@ public abstract class VehiculoGeneral implements IAlquilable {
 	}
 	
 	abstract boolean siEstaDisponible();
-	abstract int getImporteTotalGenerado();
+	
+	
+	public float getImporteTotalGenerado() {
+
+		float importeTotal = 0;
+		
+		
+		return importeTotal;
+	}
 	
 	
 	

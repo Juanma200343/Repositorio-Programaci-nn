@@ -13,11 +13,6 @@ public class Coche extends VehiculoCombustible {
 		return false;
 	}
 
-	@Override
-	int getImporteTotalGenerado() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
 	@Override
 	public boolean estaAlquilado() {
