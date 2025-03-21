@@ -1,5 +1,8 @@
 package modelo.Simulacro20Marzo;
 
+import java.time.LocalDate;
+import java.util.Arrays;
+
 import modelo.Simulacro19Marzo.ICompeticion;
 
 public class Deportistas implements ICompeticion {
@@ -18,7 +21,7 @@ public class Deportistas implements ICompeticion {
 	 * @param altura
 	 * @param pruebas
 	 */
-	public Deportistas(String nombre, String pais, int edad, double peso, double altura, String[] pruebas) {
+	public Deportistas(String nombre, String pais, int edad, double peso, double altura) {
 		super();
 		this.nombre = nombre;
 		this.pais = pais;
@@ -77,6 +80,36 @@ public class Deportistas implements ICompeticion {
 		return 0;
 	}
 	
+	
+	public Pruebas getPruebaMasCercana() {
+		Pruebas p = null;
+		for(int i = 0; i< pruebas.length; i++ ) {
+			if(p != null && pruebas[i].equals(Estado.PLANIFICADA))
+			
+				
+		}
+		return p;
+		
+	}
+	
+	
+	
+	
+	public int getHorasEntrenamiento(LocalDate fecha) {
+		int numDias = 0;
+		
+		
+		return numDias;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Deportistas [nombre=" + nombre + ", pais=" + pais + ", edad=" + edad + ", peso=" + peso + ", altura="
+				+ altura + ", pruebas=" + Arrays.toString(pruebas) + "]";
+	}
+	
+
 	
 	
 }
