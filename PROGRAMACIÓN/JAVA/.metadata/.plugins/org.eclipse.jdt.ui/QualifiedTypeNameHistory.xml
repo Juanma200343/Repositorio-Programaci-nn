@@ -7,4 +7,5 @@
     <fullyQualifiedTypeName name="modelo.CorreoElectronico"/>
     <fullyQualifiedTypeName name="modelo.Animal"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
 </qualifiedTypeNameHistroy>
